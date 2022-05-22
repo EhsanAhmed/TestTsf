@@ -1,0 +1,13 @@
+﻿@foreach (var student in Model)
+{
+    <div>
+        <ul>
+            <li>@student.Name</li>
+            <li>@student.ID</li>
+            <li>@student.Address</li>
+          <li> <img src="/Image/@student.Image" style="width:100px;height:100px"/></li>
+          <li><a href="/student/studentDetails/@student.ID">Get Details</a> </li>
+          <li>----------------------</li>
+        </ul>
+    </div>
+}
